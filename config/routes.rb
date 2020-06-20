@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   post 'confirm' => 'contacts#confirm'
   post 'done' => 'contacts#done'
 
+  root 'homes#top'
+
 end

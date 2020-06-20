@@ -14,3 +14,36 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+function initMap(){
+//一つ目の地図
+  var latlng = new google.maps.LatLng(35.074963,135.520204);
+  var myOptions = {
+      zoom: 18,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map_01 = new google.maps.Map(
+      document.getElementById("map-01"),  //一つ目の地図のIDを指定
+      myOptions
+  );
+  var marker = new google.maps.Marker({
+      position: latlng,
+      map: map_01,
+  });
+//二つ目の地図
+  var latlng = new google.maps.LatLng(34.986066,135.717118);
+  var myOptions = {
+      zoom: 18,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map_02 = new google.maps.Map(
+      document.getElementById("map-02"),  //二つ目の地図のIDを指定
+      myOptions
+  );
+  var marker = new google.maps.Marker({
+      position: latlng,
+      map: map_02,
+  });
+};
