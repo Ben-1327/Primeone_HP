@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   post 'confirm' => 'contacts#confirm'
   post 'done' => 'contacts#done'
 
+  get 'about' => 'homes#about'
+  get 'access' => 'homes#access'
+  get 'privacy_policy' => 'homes#privacy_policy'
+
   root 'homes#top'
 
 end
