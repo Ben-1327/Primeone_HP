@@ -1,0 +1,53 @@
+<div class="form_page">
+  <h2>確認</h2>
+  <%= form_with(model: @contact, local: true, url: {action: 'create'}) do |f| %>
+    <table>
+      <tbody>
+        <tr>
+          <td>お名前</td>
+          <td>
+            <%= @contact.name %>
+            <%= f.hidden_field :name, :value => @contact %>
+          </td>
+        </tr>
+        <tr>
+          <td>フリガナ</td>
+          <td>
+            <%= @contact.ruby %>
+            <%= f.hidden_field :ruby, :value => @contact %>
+          </td>
+        </tr>
+        <tr>
+          <td>企業名</td>
+          <td>
+            <%= @contact.company_name %>
+            <%= f.hidden_field :company_name, :value => @contact %>
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス</td>
+          <td>
+            <%= @contact.email %>
+            <%= f.hidden_field :email, :value => @contact %>
+          </td>
+        </tr>
+        <tr>
+          <td>TEL</td>
+          <td>
+            <%= @contact.tel %>
+            <%= f.hidden_field :tel, :value => @contact %>
+          </td>
+        </tr>
+        <tr>
+          <td>内容</td>
+          <td>
+            <%= @contact.contacts %>
+            <%= f.hidden_field :contacts, :value => @contact %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <%= link_to "戻る", :back %>
+    <%= f.submit '送信', class: "btn btn-success btn-lg" %>
+  <% end %>
+</div>

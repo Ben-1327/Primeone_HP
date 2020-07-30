@@ -1,0 +1,52 @@
+<div class="form_page">
+  <h2>お問い合わせ</h2>
+  <%= form_with(local: true, url: confirm_path) do |f| %>
+    <table>
+      <tbody>
+        <tr>
+          <td>お名前</td>
+          <td>
+            <%= f.label :name, "お名前" %>
+            <%= f.text_field :name, class: "form-control" %>
+          </td>
+        </tr>
+        <tr>
+          <td>フリガナ</td>
+          <td>
+            <%= f.label :ruby, "フリガナ" %>
+            <%= f.text_field :ruby, class: "form-control" %>
+          </td>
+        </tr>
+        <tr>
+          <td>企業名</td>
+          <td>
+            <%= f.label :company_name, "企業名" %>
+            <%= f.text_field :company_name, class: "form-control" %>
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス</td>
+          <td>
+            <%= f.label :email, "メールアドレス" %>
+            <%= f.text_field :email, class: "form-control" %>
+          </td>
+        </tr>
+        <tr>
+          <td>TEL</td>
+          <td>
+            <%= f.label :tel, "TEL" %>
+            <%= f.text_field :tel, class: "form-control" %>
+          </td>
+        </tr>
+        <tr>
+          <td>内容</td>
+          <td>
+            <%= f.label :contents, "内容" %>
+            <%= f.text_area :contents, class: "form-control" %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <%= f.submit "確認画面へ進む", class: "btn btn-primary btn-lg"%>
+  <% end %>
+</div>

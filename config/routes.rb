@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get  'index' =>'contacts#index'
+  get  'contact' =>'contacts#contact'
   post 'confirm' => 'contacts#confirm'
   post 'done' => 'contacts#done'
 

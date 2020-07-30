@@ -1,22 +1,27 @@
 class ContactsController < ApplicationController
 
-  def index
-    @contact = Contact.new
+  def contact
   end
 
   def confirm
-    @contact = Contact.new(contact_params)
+    @contact = Contact.new
+    @contact.name = params[:name]
+    @contact.ruby = params[:ruby]
+    @contact.company_name = params[:company_name]
+    @contact.email = params[:email]
+    @contact.tel = params[:tel]
+    @contact.contents = params[:contents]
     if @contact.valid?
-      render :action => 'confirm'
+      render :action => 'done'
     else
-      render :action => 'index'
+      render :action => 'contact'
     end
   end
 
   def done
     @contact = Contact.new(contact_params)
     if params[:back]
-      render :action => 'index'
+      render :action => 'contact'
     else
       ContactMailer.received_email(@contact).deliver_now
       render :action => 'done'
