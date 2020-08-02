@@ -51,4 +51,9 @@
 
 header{
   height: 10vh;
+  background-color: white;
+  position: fixed;
+  transition: .5s;
+  width: 100%;
+  z-index: 10;
 }
