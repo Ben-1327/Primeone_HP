@@ -16,5 +16,21 @@
 }
 
 .top_img{
-  background-image: image-url(".jpeg");
+  background-image: image-url("top_img.jpg");
+  background-size: cover;
+  height: 90vh;
+}
+
+.each_title{
+  font-family: CaviarDreams;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-contact{
+  border: solid 1px #3E3E3E;
+  border-radius: 300px;
+  padding: 0.7rem 1rem;
+  transition: 0.3s;
 }

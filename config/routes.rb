@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post 'done' => 'contacts#done'
 
   get 'about' => 'homes#about'
+  get 'performance' => 'homes#performance'
   get 'access' => 'homes#access'
   get 'privacy_policy' => 'homes#privacy_policy'
 
