@@ -3,15 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .map-01{
-  height: 400px;
-  width: 700px;
+  height: 350px;
+  width: 650px;
   margin: 0 auto;
 }
 
 
 .map-02{
-  height: 400px;
-  width: 700px;
+  height: 350px;
+  width: 650px;
   margin: 0 auto;
 }
 
@@ -21,11 +21,18 @@
   height: 90vh;
 }
 
+.top_img h1{
+  color: white;
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
 .each_title{
   font-family: CaviarDreams;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .btn-contact{
@@ -33,6 +40,11 @@
   border-radius: 300px;
   padding: 0.7rem 1rem;
   transition: 0.3s;
+}
+
+
+.form_btn{
+  text-align: center;
 }
 
 .btn-down{
@@ -43,4 +55,82 @@
 .fa-angle-double-down{
   font-size: 44px;
   color: #3E3E3E;
+}
+
+.services{
+  list-style: none;
+  position: relative;
+  left: 25%;
+  float: left;
+}
+
+.service{
+  float: left;
+  padding: 0 0 0 80px/*左にまとめてつける;; */;
+  position: relative;
+  left: -20%;
+}
+
+.service_text{
+  font-weight: bold;
+  position: relative;
+  top: -60px;
+}
+
+.contact_text{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.map_space{
+  clear: both;
+}
+
+.map-01, .map-02{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table th{
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #003586;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #003586;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+table td{
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
 }

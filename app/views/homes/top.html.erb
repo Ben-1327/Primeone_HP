@@ -10,99 +10,127 @@
     </div>
   </div>
   <div id="service" class="service_space">
-    <h2 class="each_title">Service</h2>
-    <div class="row service_contents">
-      <div class="col-6 service_img">
-
-      </div>
-      <div class="col-6 service_text">
-
-      </div>
-    </div>
-    <div class="row service_contents">
-      <div class="col-6 service_text">
-
-      </div>
-      <div class="col-6 service_img">
-
+    <div class="container">
+      <h2 class="each_title">Service</h2>
+      <div class="service_contents">
+        <ul class="services">
+          <li class="service">
+            <div class="service_img">
+              <%= image_tag "home_about_plan.png", :width => "186", :height => "" %>
+            </div>
+            <div class="service_text">
+              FacebookやTwitter、<br>
+              Instagram等様々なSNSを使<br>
+              用したPRや集客等トータルコン<br>
+              サルティング致します。
+            </div>
+          </li>
+          <li class="service">
+            <div class="service_img">
+              <%= image_tag "home_about_print.png", :width => "186", :height => "250" %>
+            </div>
+            <div class="service_text">
+              スマホケース・Tシャツ・ステッ<br>
+              カー・ウィンドウディスプレ<br>
+              イ・看板等々・オンデマンドプ<br>
+              リントに対応しております。
+            </div>
+          </li>
+          <li class="service">
+            <div class="service_img">
+              <%= image_tag "home_about_web.png", :width => "186", :height => "250" %>
+            </div>
+            <div class="service_text">
+              Wordpressを使用したWEB制<br>
+              作・SNSの運用や活用方法のご<br>
+              提案をいたします。
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="map_space">
-    <h2 class="each_title">Location</h2>
-    <div class="row">
-      <div class="col-6">
-        <h3>プライムワン本社</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td　colspan="2"><div class="map-01" id='map-01'></div></td>
-            </tr>
-            <tr>
-              <td>所在地</td>
-              <td>〒629-0153<br>京都府南丹市八木町八木嶋町ノ坪11-1</td>
-            </tr>
-            <tr>
-              <td>TEL</td>
-              <td>0771-43-2088</td>
-            </tr>
-            <tr>
-              <td>FAX</td>
-              <td>0771-42-4211</td>
-            </tr>
-            <tr>
-              <td>営業時間</td>
-              <td>月～金曜日／9：00～17:00</td>
-            </tr>
-            <tr>
-              <td>定休日</td>
-              <td>土・日・祝</td>
-            </tr>
-            <tr>
-              <td>最寄駅</td>
-              <td>JR嵯峨野線 八木駅</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-6">
-        <h3>プライムワン　京都営業所</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td　colspan="2"><div class="map-01" id='map-02'></div></td>
-            </tr>
-            <tr>
-              <td>所在地</td>
-              <td>〒615-0841<br>京都府京都市右京区西京極火打畑町4</td>
-            </tr>
-            <tr>
-              <td>TEL</td>
-              <td>075-874-3587</td>
-            </tr>
-            <tr>
-              <td>FAX</td>
-              <td>075-311-5420</td>
-            </tr>
-            <tr>
-              <td>営業時間</td>
-              <td>月～金曜日 / 9：00～17:00</td>
-            </tr>
-            <tr>
-              <td>定休日</td>
-              <td>土・日・祝日</td>
-            </tr>
-            <tr>
-              <td>最寄駅</td>
-              <td>JR嵯峨野線 八木駅</td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="map_space gray_cover">
+    <div class="container">
+      <h2 class="each_title">Location</h2>
+      <div class="row">
+        <div class="col-6">
+          <h3>プライムワン本社</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td　colspan="2"><div class="map-01" id='map-01'></div></td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>〒629-0153<br>京都府南丹市八木町八木嶋町ノ坪11-1</td>
+              </tr>
+              <tr>
+                <th>TEL</th>
+                <td>0771-43-2088</td>
+              </tr>
+              <tr>
+                <th>FAX</th>
+                <td>0771-42-4211</td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>月～金曜日／9：00～17:00</td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>土・日・祝</td>
+              </tr>
+              <tr>
+                <th>最寄駅</th>
+                <td>JR嵯峨野線 八木駅</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6">
+          <h3>プライムワン　京都営業所</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td　colspan="2"><div class="map-01" id='map-02'></div></td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>〒615-0841<br>京都府京都市右京区西京極火打畑町4</td>
+              </tr>
+              <tr>
+                <th>TEL</th>
+                <td>075-874-3587</td>
+              </tr>
+              <tr>
+                <th>FAX</th>
+                <td>075-311-5420</td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>月～金曜日 / 9：00～17:00</td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>土・日・祝日</td>
+              </tr>
+              <tr>
+                <th>最寄駅</th>
+                <td>JR嵯峨野線 八木駅</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
   <div class="to_contact">
     <h2 class="each_title">Contact</h2>
+    <div class="contact_text">
+      ご依頼・ご質問・お見積もりは<br>
+      こちらまで
+    </div>
     <div class="form_btn">
       <%= link_to "お問い合わせ", contact_path, class:"btn-contact link_text" %>
     </div>

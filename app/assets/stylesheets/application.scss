@@ -57,3 +57,27 @@ header{
   width: 100%;
   z-index: 10;
 }
+
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 160px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+
+ position: absolute;/*←絶対位置*/
+ bottom: 0; /*下に固定*/
+}
+
+.gray_cover{
+  background-color: #f3f3f3;
+}
+
+.copyright{
+  text-align: center;
+}

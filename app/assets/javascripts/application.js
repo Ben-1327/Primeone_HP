@@ -12,10 +12,10 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
 
-function initMap(){
+// Google Map API
+window.onload = function initMap(){
 //一つ目の地図
   var latlng = new google.maps.LatLng(35.074963,135.520204);
   var myOptions = {
@@ -47,3 +47,17 @@ function initMap(){
       map: map_02,
   });
 };
+
+// スクロールの挙動
+
+$('a[href^="#"]').click(function() {
+  // スクロールの速度
+  var speed = 400; // ミリ秒で記述
+  var href = $(this).attr("href");
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var position = target.offset().top;
+  $('body,html').animate({
+    scrollTop: position
+  }, speed, 'swing');
+  return false;
+});
