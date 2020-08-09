@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :admin_users
+  devise_for :admin_users, controllers:{
+    registrations: 'admins/registrations',
+    sessions: 'admins/sessions',
+    passwords: 'admins/passwords'
+}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   get 'contact' =>'contacts#contact'
@@ -13,5 +17,10 @@ Rails.application.routes.draw do
   get 'privacy_policy' => 'homes#privacy_policy'
 
   root 'homes#top'
+
+  namespace :admin do
+    get 'top' => 'admins#top'
+    
+  end
 
 end
