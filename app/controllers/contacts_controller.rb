@@ -1,6 +1,16 @@
 class ContactsController < ApplicationController
 
   def contact
+    @contact = Contact.new
+  end
+
+  def create
+    @contact = Contact.new(contact_params)
+    if @contact.save
+      redirect_to done_path, notice: "フォームは送信されました。"
+    else
+      redirect_to contact_path, notice: "フォームの送信に失敗しました。"
+    end
   end
 
   def confirm

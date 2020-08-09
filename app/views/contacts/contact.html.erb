@@ -3,7 +3,7 @@
 <div class="form_page">
   <div class="container">
     <h2>お問い合わせ</h2>
-    <%= form_with(local: true, url: confirm_path) do |f| %>
+    <%= form_with model: @contact, url: {controller: 'contacts', action: 'create' },local: true do |f| %>
       <table class="FormTable">
         <tbody>
           <tr>
