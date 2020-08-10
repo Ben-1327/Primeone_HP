@@ -9,4 +9,8 @@ class Admin::ContactsController < ApplicationController
     @contacts = Contact.page(params[:page]).reverse_order.per(10)
   end
 
+  def show
+    @contact = Contact.find(params[:id])
+  end
+
 end

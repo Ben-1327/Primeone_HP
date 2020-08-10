@@ -3,32 +3,30 @@
     <h2></h2>
     <table>
       <tbody>
-        <% @contacts.each do |contact| %>
         <tr>
           <th>お名前</th>
-          <td><%= contact.user_name %></td>
+          <td><%= @contact.user_name %></td>
         </tr>
         <tr>
           <th>フリガナ</th>
-          <td><%= contact.ruby %></td>
+          <td><%= @contact.ruby %></td>
         </tr>
         <tr>
           <th>企業名</th>
-          <td><%= contact.company_name %></td>
+          <td><%= @contact.company_name %></td>
         </tr>
         <tr>
           <th>e-mail</th>
-          <td><%= contact.email %></td>
+          <td><%= @contact.email %></td>
         </tr>
         <tr>
           <th>TEL</th>
-          <td><%= contact.tel %></td>
+          <td><%= @contact.tel %></td>
         </tr>
         <tr>
           <th>内容</th>
-          <td><%= contact.contents %></td>
+          <td><%= @contact.contents %></td>
         </tr>
-        <% end %>
       </tbody>
     </table>
   </div>
