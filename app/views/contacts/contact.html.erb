@@ -3,12 +3,12 @@
 <div class="form_page">
   <div class="container">
     <h2>お問い合わせ</h2>
-    <%= form_with model: @contact, url: {controller: 'contacts', action: 'create' },local: true do |f| %>
+    <%= form_with url: contacts_path , method: :post, local: true do |f| %>
       <table class="FormTable">
         <tbody>
           <tr>
             <td class="cp_iptxt">
-              <%= f.text_field :name, class: "form-control iptxt", type:"text", placeholder:"お名前" %>
+              <%= f.text_field :user_name, class: "form-control iptxt", type:"text", placeholder:"お名前" %>
               <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
             </td>
           </tr>
@@ -45,7 +45,7 @@
         </tbody>
       </table>
       <div class="buttons-coll">
-        <%= f.submit "確認画面へ進む", class: "custom-btn"%>
+        <%= f.submit "送信", class: "custom-btn"%>
       </div>
     <% end %>
   </div>

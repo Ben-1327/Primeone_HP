@@ -10,15 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_19_023353) do
+ActiveRecord::Schema.define(version: 2020_08_09_153715) do
+
+  create_table "admin_users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_admin_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
 
   create_table "contacts", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "ruby", null: false
+    t.string "user_name"
+    t.string "ruby"
     t.string "company_name"
-    t.string "email", null: false
+    t.string "email"
     t.string "tel"
-    t.text "contents", null: false
+    t.text "contents"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

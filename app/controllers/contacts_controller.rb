@@ -33,7 +33,6 @@ class ContactsController < ApplicationController
     if params[:back]
       render :action => 'contact'
     else
-      ContactMailer.received_email(@contact).deliver_now
       render :action => 'done'
     end
   end
@@ -41,7 +40,7 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :ruby, :company_name, :email, :tel, :contents)
+    params.permit(:user_name, :ruby, :company_name, :email, :tel, :contents)
   end
 
 end
