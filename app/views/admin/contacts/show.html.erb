@@ -1,8 +1,15 @@
+<%= stylesheet_link_tag 'contact' %>
+
+
 <div class="admin_show_page">
   <div class="container">
-    <h2></h2>
-    <table>
+    <h2>お問い合わせ詳細</h2>
+    <table class="admin_show_table">
       <tbody>
+        <tr>
+          <th>日時</th>
+          <td><%= l @contact.updated_at %></td>
+        </tr>
         <tr>
           <th>お名前</th>
           <td><%= @contact.user_name %></td>

@@ -1,29 +1,29 @@
+<%= stylesheet_link_tag 'contact' %>
+
 <div class="admin_top">
   <div class="container">
     <h2 class="">本日のお問い合わせ一覧</h2>
-    <div class="">
-      <table class="">
-        <thead class="">
-          <tr>
-            <th class="">お名前</th>
-            <th class="">企業名</th>
-            <th class="">内容</th>
-            <th class="">日時</th>
-            <th class=""></th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @contacts.each do |contact| %>
-          <tr>
-            <td><%= contact.user_name %></td>
-            <td><%= contact.company_name %></td>
-            <td><%= contact.contents.truncate(50) %></td>
-            <td><%= l contact.created_at %></td>
-            <td><%= link_to "show", admin_contact_path(contact.id) %></td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+    <table class="admin_index_table">
+      <thead>
+        <tr>
+          <th>日時</th>
+          <th>お名前</th>
+          <th>企業名</th>
+          <th>内容</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @contacts.each do |contact| %>
+        <tr>
+          <td><%= l contact.created_at %></td>
+          <td><%= contact.user_name %></td>
+          <td><%= contact.company_name %></td>
+          <td><%= contact.contents.truncate(50) %></td>
+          <td><%= link_to "show", admin_contact_path(contact.id) %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 </div>
