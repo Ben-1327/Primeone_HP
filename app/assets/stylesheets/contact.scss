@@ -102,6 +102,39 @@
     }
 
 
+    // done_page
+
+    .done-message{
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .back-btn {
+      text-align: center;
+      padding: 10px 25px;
+      color: black;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      background: transparent;
+      outline: none !important;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      left: 45%;
+      display: inline-block;
+      border: 2px solid black;
+    }
+
+    .back-btn:hover {
+      background: black;
+      color: #fff;
+    }
+    .back-btn:active {
+      top: 2px;
+    }
+
+
 
 // Admin
 
