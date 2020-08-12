@@ -22,7 +22,7 @@
           </nav>
           <nav class="nav">
             <ul class="nav p-4">
-              <li class="nav-item mr-3"><%= link_to "Home", admin_top_path, class: "btn btn-nav" %></li>
+              <li class="nav-item mr-3"><%= link_to "ホーム", admin_top_path, class: "btn btn-nav" %></li>
               <li class="nav-item mr-3"><%= link_to "本日の問い合わせ", admin_today_path, class: "btn btn-nav" %></li>
               <li class="nav-item mr-3"><%= link_to "問い合わせ", admin_contacts_path, class: "btn btn-nav" %></li>
               <li class="nav-item"><%= link_to "ログアウト", destroy_admin_user_session_path, method: :delete, class: "btn btn-nav" %></li>
@@ -36,10 +36,10 @@
           </nav>
           <nav class="nav">
             <ul class="nav p-4">
-              <li class="nav-item mr-3"><%= link_to "Home", root_path, class: "btn btn-nav" %></li>
-              <li class="nav-item mr-3"><%= link_to "About", about_path, class: "btn btn-nav" %></li>
-              <li class="nav-item mr-3"><%= link_to "Contact", contact_path, class: "btn btn-nav" %></li>
-              <li class="nav-item"><%= link_to "Performance", performance_path, class: "btn btn-nav" %></li>
+              <li class="nav-item mr-3"><%= link_to "ホーム", root_path, class: "btn btn-nav" %></li>
+              <li class="nav-item mr-3"><%= link_to "概要", about_path, class: "btn btn-nav" %></li>
+              <li class="nav-item mr-3"><%= link_to "お問い合わせ", contact_path, class: "btn btn-nav" %></li>
+              <li class="nav-item"><%= link_to "プライバシーポリシー", privacy_policy_path, class: "btn btn-nav" %></li>
             </ul>
           </nav>
           <% end %>
@@ -68,7 +68,6 @@
                   <li class="nav-item mr-3"><%= link_to "Home", root_path, class: "btn btn-nav" %></li>
                   <li class="nav-item mr-3"><%= link_to "About", about_path, class: "btn btn-nav" %></li>
                   <li class="nav-item mr-3"><%= link_to "Contact", contact_path, class: "btn btn-nav" %></li>
-                  <li class="nav-item"><%= link_to "Performance", performance_path, class: "btn btn-nav" %></li>
                   <li class="nav-item"><%= link_to "プライバシーポリシー", privacy_policy_path, class: "btn btn-nav" %></li>
                 </ul>
               </nav>
