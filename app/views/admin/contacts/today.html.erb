@@ -23,6 +23,7 @@
           <td><%= link_to "show", admin_contact_path(contact.id) %></td>
         </tr>
         <% end %>
+        <%= paginate @contacts %>
       </tbody>
     </table>
   </div>
